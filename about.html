@@ -54,46 +54,13 @@
 
 	<!-- Preloader -->
 	<div id="preloader">
-		<div id="status"></div>
+		<!--div id="status"></div-->
+                         <p class="preloader">$ sudo nisb install website</p>
+                         <p class="preloader">Installing   nisb-website...<span>|</span></p>
 	</div>
 	
-	<!-- NavBar-->
-	<nav class="navbar-default" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#home"><img src="https://mridulganga.github.io/nisb-cdn/img/logos/resized_logo3.png"></a>
-			</div>
-
-			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					
-					<li class="menuItem"><a href="index.html#whatis">Home</a></li>
-					<li class="menuItem"><a href="index.html#useit">About</a></li>
-					<li class="menuItem"><a href="index.html#screen">Events</a></li>
-					<li class="menuItem"><a href="index.html#credits">Roadmap</a></li>
-					 <li class="menuitem dropdown">
-                      <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        SIG
-                        <span class="caret"></span>
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="dLabel">
-                        <li class="menuItem"><a href="#screen">WIE</a></li>
-						<li class="menuItem"><a href="#screen">CS</a></li>
-						<li class="menuItem"><a href="#screen">Focus Group</a></li>
-                      </ul>
-                    </li>
-					<li class="menuItem"><a href="index.html#contact">Contact</a></li>
-				</ul>
-			</div>
-		   
-		</div>
-	</nav> 
+	<!-- Nav was here -->
+	<div id="navhome"></div>
 	
 	<!-- What is -->
 	<div id="whatis" class="content-section-b" style="border-top: 0">
@@ -104,7 +71,7 @@
 				<p class="lead" style="margin-top:0">Advancing technology for humanity<p>
 				
 			</div>
-			</br><hr size="30"></br>
+			</br></br>
 			<div class="row">
 			
 				<div class="col-sm-10 wow fadeInDown text-justify" style="float:none; margin:0 auto; overflow:hidden;">
@@ -259,46 +226,8 @@ Electronika , IPL are few our signature events. </p>
 	
 	
 	
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h3 class="footer-title">Follow Me!</h3>
-            <p>Vuoi ricevere news su altri template?<br/>
-              Visita Andrea Galanti.it e vedrai tutte le news riguardanti nuovi Theme!<br/>
-              Go to: <a  href="http://andreagalanti.it" target="_blank">andreagalanti.it</a>
-            </p>
-			
-			<!-- LICENSE -->
-			<a rel="cc:attributionURL" href="http://www.andreagalanti.it/flatfy"
-		   property="dc:title">Flatfy Theme </a> by
-		   <a rel="dc:creator" href="http://www.andreagalanti.it"
-		   property="cc:attributionName">Andrea Galanti</a>
-		   is licensed to the public under 
-		   <BR>the <a rel="license"
-		   href="http://creativecommons.org/licenses/by-nc/3.0/it/deed.it">Creative
-		   Commons Attribution 3.0 License - NOT COMMERCIAL</a>.
-		   
-	   
-          </div> <!-- /col-xs-7 -->
-
-          <div class="col-md-5">
-            <div class="footer-banner">
-              <h3 class="footer-title">Address</h3>
-              <ul>
-                <li>NIE IEEE Students Branch</li>
-                <li>The National Institute of Engineering</li>
-                <li>Mysuru</li>
-                <li>Branch Counsellor</li>
-                <li>Mr Counsellor - 9988776655</li>
-				<li>email@email.com</li>
-              </ul>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+	<!-- Footer was here -->
+	<div id="footerhome"></div>
 
     <!-- JavaScript -->
     <script src="https://mridulganga.github.io/nisb-cdn/js/jquery-1.10.2.js"></script>
@@ -308,12 +237,12 @@ Electronika , IPL are few our signature events. </p>
 	<!-- StikyMenu -->
 	<script src="https://mridulganga.github.io/nisb-cdn/js/stickUp.min.js"></script>
 	<script type="text/javascript">
-	  jQuery(function($) {
 		$(document).ready( function() {
-		  $('.navbar-default').stickUp();
-		  
+			$("#navhome").load("nav.html");
+			$("#footerhome").load("footer.html");
+		  	$('.navbar-default').stickUp();
+
 		});
-	  });
 	
 	</script>
 	<!-- Smoothscroll -->
